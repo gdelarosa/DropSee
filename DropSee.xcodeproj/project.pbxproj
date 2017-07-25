@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26899A497BF73EFCA72F88BA /* Pods_DropSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD525886741B6EB3FE3B26CF /* Pods_DropSee.framework */; };
 		51BCFE2C1F2714F100AC944B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCFE2B1F2714F100AC944B /* AppDelegate.swift */; };
-		51BCFE2E1F2714F100AC944B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCFE2D1F2714F100AC944B /* ViewController.swift */; };
+		51BCFE2E1F2714F100AC944B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCFE2D1F2714F100AC944B /* MapVC.swift */; };
 		51BCFE311F2714F100AC944B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCFE2F1F2714F100AC944B /* Main.storyboard */; };
 		51BCFE331F2714F100AC944B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BCFE321F2714F100AC944B /* Assets.xcassets */; };
 		51BCFE361F2714F100AC944B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCFE341F2714F100AC944B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253577C66CFF6823F59EEE65 /* Pods-DropSee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropSee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropSee/Pods-DropSee.debug.xcconfig"; sourceTree = "<group>"; };
 		51BCFE281F2714F100AC944B /* DropSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BCFE2B1F2714F100AC944B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51BCFE2D1F2714F100AC944B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51BCFE2D1F2714F100AC944B /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		51BCFE301F2714F100AC944B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51BCFE321F2714F100AC944B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51BCFE351F2714F100AC944B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51BCFE371F2714F100AC944B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD525886741B6EB3FE3B26CF /* Pods_DropSee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropSee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB110F3EFC2795895CA62C4B /* Pods-DropSee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropSee.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropSee/Pods-DropSee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26899A497BF73EFCA72F88BA /* Pods_DropSee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11BCF84C48C305C4F1942A68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253577C66CFF6823F59EEE65 /* Pods-DropSee.debug.xcconfig */,
+				FB110F3EFC2795895CA62C4B /* Pods-DropSee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51BCFE1F1F2714F100AC944B = {
 			isa = PBXGroup;
 			children = (
 				51BCFE2A1F2714F100AC944B /* DropSee */,
 				51BCFE291F2714F100AC944B /* Products */,
+				11BCF84C48C305C4F1942A68 /* Pods */,
+				CE647D54982C3D8C317858F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +70,54 @@
 		51BCFE2A1F2714F100AC944B /* DropSee */ = {
 			isa = PBXGroup;
 			children = (
+				51BCFE401F27160B00AC944B /* Utilities */,
+				51BCFE3F1F27160000AC944B /* Extensions */,
+				51BCFE3E1F2715F900AC944B /* View */,
+				51BCFE3D1F2715F400AC944B /* Controller */,
 				51BCFE2B1F2714F100AC944B /* AppDelegate.swift */,
-				51BCFE2D1F2714F100AC944B /* ViewController.swift */,
 				51BCFE2F1F2714F100AC944B /* Main.storyboard */,
 				51BCFE321F2714F100AC944B /* Assets.xcassets */,
 				51BCFE341F2714F100AC944B /* LaunchScreen.storyboard */,
 				51BCFE371F2714F100AC944B /* Info.plist */,
 			);
 			path = DropSee;
+			sourceTree = "<group>";
+		};
+		51BCFE3D1F2715F400AC944B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51BCFE2D1F2714F100AC944B /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		51BCFE3E1F2715F900AC944B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51BCFE3F1F27160000AC944B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		51BCFE401F27160B00AC944B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE647D54982C3D8C317858F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD525886741B6EB3FE3B26CF /* Pods_DropSee.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51BCFE3A1F2714F100AC944B /* Build configuration list for PBXNativeTarget "DropSee" */;
 			buildPhases = (
+				562856E4B59BA24EA216D142 /* [CP] Check Pods Manifest.lock */,
 				51BCFE241F2714F100AC944B /* Sources */,
 				51BCFE251F2714F100AC944B /* Frameworks */,
 				51BCFE261F2714F100AC944B /* Resources */,
+				A6C7E07260B76B616BA888AB /* [CP] Embed Pods Frameworks */,
+				9320202A4B808B6250D3341E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +189,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		562856E4B59BA24EA216D142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9320202A4B808B6250D3341E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropSee/Pods-DropSee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C7E07260B76B616BA888AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropSee/Pods-DropSee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51BCFE241F2714F100AC944B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BCFE2E1F2714F100AC944B /* ViewController.swift in Sources */,
+				51BCFE2E1F2714F100AC944B /* MapVC.swift in Sources */,
 				51BCFE2C1F2714F100AC944B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +374,7 @@
 		};
 		51BCFE3B1F2714F100AC944B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253577C66CFF6823F59EEE65 /* Pods-DropSee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;
@@ -281,6 +389,7 @@
 		};
 		51BCFE3C1F2714F100AC944B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB110F3EFC2795895CA62C4B /* Pods-DropSee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;

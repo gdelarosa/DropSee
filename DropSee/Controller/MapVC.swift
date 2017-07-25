@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapVC.swift
 //  DropSee
 //
 //  Created by Gina De La Rosa on 7/24/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
