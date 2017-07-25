@@ -8,10 +8,9 @@
 
 import Foundation
 
-let apiKey = "657ecf2c56ead2126fd7ec4128838c4d"
+let apiKey = "insert your api key here"
 
-func flickrURL(forApiKey key: String, withAnnotation annotation: DropPin, andNumberPhotos number: Int) -> String {
-    return "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(apiKey)&lat=\(annotation.coordinate.latitude)&lon=\(annotation.coordinate.longitude)&radius=\(number)&per_page=40&format=json&nojsoncallback=1"
-    
+func flickrUrl(forApiKey key: String, withAnnotation annotation: DropPin, andNumberOfPhotos number: Int) -> String {
+    return "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(apiKey)&lat=\(annotation.coordinate.latitude)&lon=\(annotation.coordinate.longitude)&radius=1&radius_units=mi&per_page=\(number)&format=json&nojsoncallback=1"
 }
 
