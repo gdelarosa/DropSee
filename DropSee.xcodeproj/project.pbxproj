@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		26899A497BF73EFCA72F88BA /* Pods_DropSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD525886741B6EB3FE3B26CF /* Pods_DropSee.framework */; };
+		51A2277A1F27AD5B008DE82B /* dropPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A227791F27AD5B008DE82B /* dropPin.swift */; };
+		51A2277C1F27D9A3008DE82B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A2277B1F27D9A3008DE82B /* PhotoCell.swift */; };
 		51BCFE2C1F2714F100AC944B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCFE2B1F2714F100AC944B /* AppDelegate.swift */; };
 		51BCFE2E1F2714F100AC944B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCFE2D1F2714F100AC944B /* MapVC.swift */; };
 		51BCFE311F2714F100AC944B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCFE2F1F2714F100AC944B /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		253577C66CFF6823F59EEE65 /* Pods-DropSee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropSee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropSee/Pods-DropSee.debug.xcconfig"; sourceTree = "<group>"; };
+		51A227791F27AD5B008DE82B /* dropPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropPin.swift; sourceTree = "<group>"; };
+		51A2277B1F27D9A3008DE82B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		51BCFE281F2714F100AC944B /* DropSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BCFE2B1F2714F100AC944B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51BCFE2D1F2714F100AC944B /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		51BCFE3E1F2715F900AC944B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51A227791F27AD5B008DE82B /* dropPin.swift */,
+				51A2277B1F27D9A3008DE82B /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A2277C1F27D9A3008DE82B /* PhotoCell.swift in Sources */,
 				51BCFE2E1F2714F100AC944B /* MapVC.swift in Sources */,
 				51BCFE2C1F2714F100AC944B /* AppDelegate.swift in Sources */,
+				51A2277A1F27AD5B008DE82B /* dropPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +429,7 @@
 				51BCFE3C1F2714F100AC944B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
